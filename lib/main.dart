@@ -14,6 +14,7 @@ class BallPage extends StatelessWidget {
         title: Text("8 Ball"),
         backgroundColor: Colors.blue[900],
       ),
+      body: Container(),
     );
   }
 }
