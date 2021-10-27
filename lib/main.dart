@@ -21,16 +21,18 @@ class BallPage extends StatelessWidget {
 }
 
 class Ball extends StatefulWidget {
-  int randomNum = 1;
-  void randomizer() {
-    randomNum = Random().nextInt(6) + 1;
-  }
-
   @override
   _BallState createState() => _BallState();
 }
 
 class _BallState extends State<Ball> {
+  int randomNum = 1;
+  void randomizer() {
+    setState(() {
+      randomNum = Random().nextInt(6) + 1;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
