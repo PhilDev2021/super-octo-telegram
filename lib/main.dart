@@ -29,7 +29,7 @@ class _BallState extends State<Ball> {
   int randomNum = 1;
   void randomizer() {
     setState(() {
-      randomNum = Random().nextInt(6) + 1;
+      randomNum = Random().nextInt(4) + 1;
     });
   }
 
