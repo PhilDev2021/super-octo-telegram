@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
 
 void main() => runApp(
       MaterialApp(
@@ -20,6 +21,11 @@ class BallPage extends StatelessWidget {
 }
 
 class Ball extends StatefulWidget {
+  int randomNum = 1;
+  void randomizer() {
+    randomNum = Random().nextInt(6) + 1;
+  }
+
   @override
   _BallState createState() => _BallState();
 }
